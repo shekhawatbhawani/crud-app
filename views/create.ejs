@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/create.css">
+</head>
+<body>
+  <nav>
+    <h1>RAJ</h1>
+    <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./search">Search</a></li>
+        <li><a href="./create">Create</a></li>
+        <li><a href="./delete">Delete</a></li>
+        <li><a href="./update">Update</a></li>
+        <li><a href="./showdata">ShowData</a></li>
+    </ul>
+  </nav>
+  <h1 class="h1">This is the create page </h1>
+
+
+
+  <div class="container">
+    <form action="/create" method="POST">
+        <!-- <input type="hidden" name="csrfmiddlewaretoken" value="g251Kuos4UFv8nCjf8RfoNEBDIZd0YKgM0cG0OaaZaUN9yYRhKoJ3uyzyyQ1myO8"> -->
+        Name : <input type="text" name="name">
+        Email : <input type="email" name="email">
+        Password : <input type="password" name="password">
+        Contact : <input type="number" name="contact" id="contact">
+
+        <input type="submit" value="submit" class="btn btn-success">
+    </form>
+</div>
+</body>
+</html>
